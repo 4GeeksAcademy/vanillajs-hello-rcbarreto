@@ -16,11 +16,9 @@ window.onload = function() {
     "Cuando tiro una hengidama"
   ];
 
-  function getRandomInt(cantidadElementos) {
-    let randomNumber = Math.floor(Math.random() * cantidadElementos);
+  // se cambio funcion "Normal" por función flecha
 
-    return randomNumber;
-  }
+  const getRandomInt = cantidadElementos => Math.floor(Math.random() * cantidadElementos);
 
   let excusa = `
   ${who[getRandomInt(who.length)]}
